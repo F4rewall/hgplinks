@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HGP - Portal de Links Úteis & Suporte de TI</title>
+  <meta name="description" content="Portal oficial de links úteis, sistemas hospitalares e suporte de TI do Hospital Geral de Palmas (HGP)." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Navigation Header (Navbar Brand Removed as Requested) -->
+  <header class="navbar">
+    <div class="navbar-container navbar-container-center">
+      <!-- Centered Navigation Buttons -->
+      <div class="navbar-actions-centered">
+        <!-- Status Indicator Removed -->
+
+        <!-- Quick Access Buttons -->
+        <button class="nav-btn btn-ghost" id="btnRamaisTerceirizadas" title="Ramais Terceirizadas">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>Ramais Terceirizadas</span>
+        </button>
+
+        <button class="nav-btn btn-ghost" id="btnRamaisATI" title="Ramais da ATI">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>Ramais da ATI</span>
+        </button>
+
+        <a href="https://ramaishgp.vercel.app/" target="_blank" rel="noopener" class="nav-btn btn-ghost" title="Telefones Úteis e Ramais do HGP">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>Telefones Úteis</span>
+        </a>
+
+        <a 
+          href="https://api.whatsapp.com/send/?phone=556330275205&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0" 
+          target="_blank" 
+          rel="noopener" 
+          class="nav-btn btn-primary" 
+          title="Abrir chamado técnico de TI no WhatsApp"
+        >
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 16.59c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.67 8.24-8.22 8.24z"/>
+          </svg>
+          <span>Abrir Chamado TI</span>
+        </a>
+
+        <!-- Inverter Cores Button (Top Right Header) -->
+        <button class="nav-btn btn-invert-colors" id="themeToggle" title="Inverter Cores (Modo Claro / Escuro)">
+          <svg class="btn-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="btn-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <span>Inverter Cores</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Centered Hero Section without border, with Larger Borderless Logo -->
+    <section class="hero-centered-section">
+      <div class="hero-centered-card hero-no-border">
+        
+        <!-- Larger Logo Container without Border -->
+        <div class="main-logo-container">
+          <div class="main-logo-box-large logo-no-border">
+            <img src="SUPORTE TI.jpg" alt="Logo Suporte TI HGP" class="main-logo-img-large" id="mainLogoImg" onerror="this.style.display='none'; document.getElementById('mainLogoFallback').style.display='flex';" />
+            <div id="mainLogoFallback" class="main-logo-fallback-large" style="display:none;">
+              <span>SUPORTE TI</span>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="hero-title-centered">HOSPITAL GERAL DE PALMAS</h1>
+        <p class="hero-subtitle-centered">
+          Telefone / WhatsApp: <a href="https://api.whatsapp.com/send/?phone=556330275205&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0" target="_blank" class="whatsapp-link">3027-5205</a><br>
+          <span class="subtext-whatsapp">abra o seu chamado para atendimento de TI pelo nosso WhatsApp</span>
+        </p>
+
+        <!-- Vertical Stacked Action Buttons (Centered) -->
+        <div class="hero-actions-stacked">
+          <!-- Button 1: WhatsApp with exact requested link -->
+          <a 
+            href="https://api.whatsapp.com/send/?phone=556330275205&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0" 
+            target="_blank" 
+            rel="noopener" 
+            class="btn-primary-lg btn-block-center"
+          >
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 16.59c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.67 8.24-8.22 8.24z"/>
+            </svg>
+            Abrir Chamado via WhatsApp (3027-5205)
+          </a>
+
+          <!-- Button 2 Removed -->
+        </div> <!-- Fechar hero-actions-stacked -->
+      </div> <!-- Fechar hero-centered-card -->
+    </section>
+
+    <!-- Toolbar: Search & Filtering -->
+    <section class="toolbar-section">
+      <div class="search-bar-wrap">
+        <div class="search-input-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Pesquisar por nome ou sigla (Ex: PEP, Soul MV, APAC, Biopsia, Gmail, SER)..." 
+            autocomplete="off" 
+          />
+          <button class="clear-search-btn" id="btnClearSearch" style="display:none;" title="Limpar pesquisa">✕</button>
+          <span class="kbd-shortcut" title="Atalho de teclado">Ctrl + K</span>
+        </div>
+      </div>
+
+      <!-- Categories & Controls Removed -->
+    </section>
+
+    <!-- Links Grid Container -->
+    <section class="links-section">
+      <div class="results-header">
+        <span class="results-count" id="resultsCountText">Exibindo 31 sistemas</span>
+      </div>
+
+      <div class="links-grid view-grid" id="linksGrid">
+        <!-- Cards generated dynamically via script.js -->
+      </div>
+
+      <div class="no-results-state" id="noResults" style="display:none;">
+        <svg class="no-results-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          <line x1="8" y1="11" x2="14" y2="11"/>
+        </svg>
+        <h3>Nenhum sistema encontrado</h3>
+        <p>Não encontramos nenhum sistema com os termos digitados. Tente buscar por siglas como "PEP", "MV", "APAC" ou limpe os filtros.</p>
+        <button class="btn-primary" id="btnResetFilters">Limpar Filtros de Pesquisa</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <span class="footer-hgp">HOSPITAL GERAL DE PALMAS</span>
+        </div>
+        <p class="footer-text">
+          Secretaria de Estado da Saúde — Tocantins (SESAU/TO)<br>
+          Núcleo de Tecnologia da Informação & Suporte Técnico
+        </p>
+      </div>
+
+      <div class="footer-col info-col">
+        <h4>Canais de Atendimento TI</h4>
+        <ul>
+          <li><strong>WhatsApp Suporte:</strong> (63) 3627-5205</li>
+          <li><strong>Ramal Interno:</strong> 5205</li>
+          <li><strong>Atendimento:</strong> Expediente & Sobreaviso TI</li>
+        </ul>
+      </div>
+
+      <div class="footer-col clock-col">
+        <div class="live-clock-card">
+          <span class="clock-label">Horário do Sistema</span>
+          <span class="clock-time" id="clockTime">00:00:00</span>
+          <span class="clock-date" id="clockDate">--/--/----</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© HGP — Hospital Geral de Palmas. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <!-- 1. Modal Sobreaviso TI -->
+  <div class="modal-backdrop" id="modalSobreaviso">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="modal-title-icon">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          <div>
+            <h2>Escala de Plantão & Sobreaviso TI</h2>
+            <p>Contatos dos técnicos de TI em sobreaviso no HGP</p>
+          </div>
+        </div>
+        <button class="modal-close" data-close-modal="modalSobreaviso">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="info-alert">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span>Em casos de urgência fora do horário comercial, acione o plantonista de sobreaviso através do WhatsApp ou ramal interno.</span>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Função / Área</th>
+                <th>Responsável / Plantão</th>
+                <th>Horário</th>
+                <th>Contato / Ramal</th>
+                <th>Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="badge-role">Suporte Geral / Hardware</span></td>
+                <td>Técnico de Sobreaviso HGP</td>
+                <td>Sobreaviso</td>
+                <td>(63) 3627-5205 / R. 5205</td>
+                <td><a href="https://api.whatsapp.com/send/?phone=556330275205&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0" target="_blank" class="btn-xs btn-bw">Chamar</a></td>
+              </tr>
+              <tr>
+                <td><span class="badge-role">Sistemas & Prontuário MV</span></td>
+                <td>Equipe de Sistemas & Banco de Dados</td>
+                <td>Sobreaviso / Comercial</td>
+                <td>Ramal 5205 / WhatsApp</td>
+                <td><a href="https://api.whatsapp.com/send/?phone=556330275205&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0" target="_blank" class="btn-xs btn-bw">Chamar</a></td>
+              </tr>
+              <tr>
+                <td><span class="badge-role">Redes & Infraestrutura</span></td>
+                <td>ATI (Agência de Tecnologia)</td>
+                <td>Seg a Sex 08h-18h</td>
+                <td>Portal ATI / Chamado</td>
+                <td><button class="btn-xs btn-secondary" onclick="openSystemUrl('https://ati.to.gov.br')">Portal ATI</button></td>
+              </tr>
+              <tr>
+                <td><span class="badge-role">Coordenador TI HGP</span></td>
+                <td>Gestão de TI Hospitalar</td>
+                <td>Comercial</td>
+                <td>(63) 3627-5205</td>
+                <td><a href="https://api.whatsapp.com/send/?phone=556330275205&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0" target="_blank" class="btn-xs btn-bw">Mensagem</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" data-close-modal="modalSobreaviso">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Modal Telefones Úteis -->
+  <div class="modal-backdrop" id="modalTelefones">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="modal-title-icon">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <div>
+            <h2>Lista de Telefones & Ramais Úteis do HGP</h2>
+            <p>Diretório de contatos internos das unidades e setores do Hospital Geral de Palmas</p>
+          </div>
+        </div>
+        <button class="modal-close" data-close-modal="modalTelefones">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="phone-search-wrap">
+          <input type="text" id="phoneSearchInput" placeholder="Filtrar por setor ou ramal (Ex: UTI, Farmácia, Recepção, Pronto Socorro)..." />
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" id="phonesTable">
+            <thead>
+              <tr>
+                <th>Setor / Unidade</th>
+                <th>Localização / Bloco</th>
+                <th>Ramal Interno</th>
+                <th>Telefone Direto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Suporte de TI (Helpdesk)</strong></td>
+                <td>Bloco Administrativo</td>
+                <td><span class="ramal-badge">5205</span></td>
+                <td>(63) 3627-5205</td>
+              </tr>
+              <tr>
+                <td><strong>Recepção Geral / Portaria</strong></td>
+                <td>Entrada Principal</td>
+                <td><span class="ramal-badge">5200</span></td>
+                <td>(63) 3627-5200</td>
+              </tr>
+              <tr>
+                <td><strong>Pronto Socorro (Recepção)</strong></td>
+                <td>Bloco A - Térreo</td>
+                <td><span class="ramal-badge">5210</span></td>
+                <td>(63) 3627-5210</td>
+              </tr>
+              <tr>
+                <td><strong>UTI Adulto (Posto 1)</strong></td>
+                <td>Bloco B - 1º Andar</td>
+                <td><span class="ramal-badge">5225</span></td>
+                <td>(63) 3627-5225</td>
+              </tr>
+              <tr>
+                <td><strong>UTI Adulto (Posto 2)</strong></td>
+                <td>Bloco B - 1º Andar</td>
+                <td><span class="ramal-badge">5226</span></td>
+                <td>(63) 3627-5226</td>
+              </tr>
+              <tr>
+                <td><strong>Farmácia Central / STOX</strong></td>
+                <td>Bloco C - Térreo</td>
+                <td><span class="ramal-badge">5240</span></td>
+                <td>(63) 3627-5240</td>
+              </tr>
+              <tr>
+                <td><strong>Centro Cirúrgico</strong></td>
+                <td>Bloco B - 2º Andar</td>
+                <td><span class="ramal-badge">5230</span></td>
+                <td>(63) 3627-5230</td>
+              </tr>
+              <tr>
+                <td><strong>Laboratório / Neolab</strong></td>
+                <td>Bloco A - Subsolo</td>
+                <td><span class="ramal-badge">5250</span></td>
+                <td>(63) 3627-5250</td>
+              </tr>
+              <tr>
+                <td><strong>Faturamento & NIR</strong></td>
+                <td>Bloco Administrativo</td>
+                <td><span class="ramal-badge">5260</span></td>
+                <td>(63) 3627-5260</td>
+              </tr>
+              <tr>
+                <td><strong>Diretoria Geral HGP</strong></td>
+                <td>Bloco Administrativo</td>
+                <td><span class="ramal-badge">5201</span></td>
+                <td>(63) 3627-5201</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" data-close-modal="modalTelefones">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Modal Ramais da ATI -->
+  <div class="modal-backdrop" id="modalRamaisATI">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="modal-title-icon">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <div>
+            <h2>Ramais da ATI</h2>
+            <p>Diretório de contatos e ramais da Agência de Tecnologia da Informação (GERAL: 0800 063 0063)</p>
+          </div>
+        </div>
+        <button class="modal-close" data-close-modal="modalRamaisATI">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="search-box mb-4">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="text" id="atiSearchInput" placeholder="Filtrar por setor, ramal ou nome..." class="search-input" />
+        </div>
+        <div class="table-responsive">
+          <table class="data-table" id="atiTable">
+            <thead>
+              <tr>
+                <th>ESTRUTURA ATI</th>
+                <th>NOVO RAMAL</th>
+                <th>NOME COMPLETO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Gabinete do Presidente</td><td><span class="ramal-badge">1001</span></td><td>Alírio Félix Martins Barros</td></tr>
+              <tr><td>Gabinete do Vice-Presidente Executivo</td><td><span class="ramal-badge">1002</span></td><td>Adams Cirino Gregorio</td></tr>
+              <tr><td>Secretária-geral</td><td><span class="ramal-badge">1010</span></td><td>Claudia Vinhal Lagares Marques</td></tr>
+              <tr><td>Secretária-geral</td><td><span class="ramal-badge">1011</span></td><td>Liana Freund Simão</td></tr>
+              <tr><td>Assessoria Jurídica</td><td><span class="ramal-badge">1014</span></td><td>Lucimara Andreia Moreira Raddatz</td></tr>
+              <tr><td>Chefia da Assessoria de Comunicação</td><td><span class="ramal-badge">1012</span></td><td>Thalia Cristina da Silva Batista</td></tr>
+              <tr><td>Gerência de Segurança</td><td><span class="ramal-badge">1013</span></td><td>João Henrique Barreto Baptista</td></tr>
+              <tr><td>Superintendência de Gestão e Governança de TI</td><td><span class="ramal-badge">1003</span></td><td>Cristina Pereira de Oliveira</td></tr>
+              <tr><td>Diretoria de Gestão de Projetos, Processos e Inovação</td><td><span class="ramal-badge">1030</span></td><td>ELISSANDRA BONFANTE DA SILVA</td></tr>
+              <tr><td>Gerência de Projetos de TI</td><td><span class="ramal-badge">1031</span></td><td>Jamal Hassan Ibrahim</td></tr>
+              <tr><td>Gerência de Processos de TI</td><td><span class="ramal-badge">1032</span></td><td>LEONARDO BARCELLOS REIS</td></tr>
+              <tr><td>Gerência de Inovações Tecnológicas</td><td><span class="ramal-badge">1033</span></td><td>ROBERTO SANTOS DA SILVA</td></tr>
+              <tr><td>Apoio - SUPGES</td><td><span class="ramal-badge">1034</span></td><td>VERONICA DE ARAUJO DAMASCENO OLIVEIRA</td></tr>
+              <tr><td>Diretoria de Gestão de Contratos</td><td><span class="ramal-badge">1035</span></td><td>Alcir Tavares</td></tr>
+              <tr><td>Gerência de Fiscalização de Contratos de TI</td><td><span class="ramal-badge">1036</span></td><td>ADRIANA DE OLIVEIRA SOARES</td></tr>
+              <tr><td>Gerência de Convênios e Recursos Descentralizados</td><td><span class="ramal-badge">1037</span></td><td>REGIANE DA CONCEICAO MACEDO</td></tr>
+              <tr><td>Diretoria de Administração e Finanças</td><td><span class="ramal-badge">1004</span></td><td>MIGUEL CARLOS CHAVES JUNIOR</td></tr>
+              <tr><td>Gerência Geral de Administração</td><td><span class="ramal-badge">1041</span></td><td>LIVIA GRACIELY ALMEIDA SILVA</td></tr>
+              <tr><td>Gerência de Execução Financeira, Orçamentária e Contábil</td><td><span class="ramal-badge">1042</span></td><td>MARIA DA CONCEICAO FERREIRA ALVES</td></tr>
+              <tr><td>Gerência de Compras de TI</td><td><span class="ramal-badge">1043</span></td><td>MARCELO MENDES FERREIRA</td></tr>
+              <tr><td>Gerência de Planejamento Estratégico de TI</td><td><span class="ramal-badge">1044</span></td><td>RONNE MARCIO PIAGEM MILHOMENS</td></tr>
+              <tr><td>Divisão de Contabilidade</td><td><span class="ramal-badge">1045</span></td><td>LEONARDO BARROS DA SILVEIRA</td></tr>
+              <tr><td>Divisão de Patrimonio</td><td><span class="ramal-badge">1046</span></td><td>JURANDIR RIBEIRO ITAPIREMA</td></tr>
+              <tr><td>Divisão de RH</td><td><span class="ramal-badge">1047</span></td><td>EDUARDA MARTINS MAULINO</td></tr>
+              <tr><td>Protocolo</td><td><span class="ramal-badge">1048</span></td><td>ELIANA MARIA LAURIS DOS SANTOS</td></tr>
+              <tr><td>Guarda</td><td><span class="ramal-badge">1049</span></td><td>Alanna Marinho da Silva</td></tr>
+              <tr><td>Superintendência de Sistemas de Informação</td><td><span class="ramal-badge">1005</span></td><td>Marinaldo Oliveira Santos</td></tr>
+              <tr><td>Diretoria de Sistemas de Informação</td><td><span class="ramal-badge">1050</span></td><td>Stefan Queiroz Barbosa</td></tr>
+              <tr><td>Gerência de Desenvolvimento de Sistemas</td><td><span class="ramal-badge">1051</span></td><td>FLAVIA ROSENDO DOS SANTOS</td></tr>
+              <tr><td>Gerência de Sistemas Corporativos</td><td><span class="ramal-badge">1052</span></td><td>HEVERTON DE MELO BEZERRA</td></tr>
+              <tr><td>Gerência de Sistemas Fazendários</td><td><span class="ramal-badge">1053</span></td><td>JESSICA BATISTA PEIXOTO DA CRUZ</td></tr>
+              <tr><td>Gerência de Sistemas de Gestão</td><td><span class="ramal-badge">1054</span></td><td>Thaís Freire de Godoy</td></tr>
+              <tr><td>Diretoria de Treinamento e Implantação de Sistemas</td><td><span class="ramal-badge">1055</span></td><td>MARCIO AMADEU LOPES DE OLIVEIRA</td></tr>
+              <tr><td>Gerência de Treinamento</td><td><span class="ramal-badge">1056</span></td><td>Daiane Rodrigues dos Santos</td></tr>
+              <tr><td>Gerência de Implantação e Integração de Sistemas</td><td><span class="ramal-badge">1057</span></td><td>MARIA DO SOCORRO CARREIRO VARAO JARDIM</td></tr>
+              <tr><td>Apoio - SUPSIS</td><td><span class="ramal-badge">1059</span></td><td>DAMARIS ANDRADE DOS SANTOS</td></tr>
+              <tr><td>Superintendência de Infraestrutura e Serviços de TI</td><td><span class="ramal-badge">1006</span></td><td>Hiram Melchiades T. G. Sobrinho</td></tr>
+              <tr><td>Diretoria de Infraestruturas</td><td><span class="ramal-badge">1060</span></td><td>PERIANO CATANI CARDOSO ARANTES</td></tr>
+              <tr><td>Gerência de Redes e Comunicação</td><td><span class="ramal-badge">1061</span></td><td>EMERSON PARREIRA SILVA</td></tr>
+              <tr><td>Gerência de Infraestrutura</td><td><span class="ramal-badge">1062</span></td><td>ELENILSON DA SILVA AMORIM</td></tr>
+              <tr><td>Gerência de Banco de Dados</td><td><span class="ramal-badge">1063</span></td><td>FABIANO ALVES SANTOS SANTANA</td></tr>
+              <tr><td>Apoio - SUPINF</td><td><span class="ramal-badge">1064</span></td><td>WALQUIRIA PEREIRA CUNHA</td></tr>
+              <tr><td>Diretoria de Suporte e Serviços</td><td><span class="ramal-badge">1065</span></td><td>MICHELLY RIBEIRO GOMES QUEIROZ SANTOS</td></tr>
+              <tr><td>Gerência de Suporte e Manutenção</td><td><span class="ramal-badge">1066</span></td><td>GUSTAVO AFONSO RODOVALHO</td></tr>
+              <tr><td>Laboratorio de microeletronica</td><td><span class="ramal-badge">1067</span></td><td>GILBERTO AMUI JUNIOR</td></tr>
+              <tr><td>Gerência de Suporte e Manutenção - ATI</td><td><span class="ramal-badge">1068</span></td><td>Marsall Aires Turibio Pimenta</td></tr>
+              <tr><td>Gerência de Atendimento aos Usuários - SERVICE DESK</td><td><span class="ramal-badge">1007</span></td><td>ERALDO FERREIRA BARBOSA PEREIRA</td></tr>
+              <tr><td>Gerência de Atendimento aos Usuários - SERVICE DESK</td><td><span class="ramal-badge">1070</span></td><td>JANAYNA ALVES ROCHA</td></tr>
+              <tr><td>Gerência de Atendimento aos Usuários - SERVICE DESK</td><td><span class="ramal-badge">1071</span></td><td>MATEUS TIAGO ANDRADE TAVARES</td></tr>
+              <tr><td>Gerência de Atendimento aos Usuários - SERVICE DESK</td><td><span class="ramal-badge">1072</span></td><td>ROSANGELA JORGE MACEDO DE BARROS</td></tr>
+              <tr><td>Gerência de Atendimento aos Usuários - SERVICE DESK</td><td><span class="ramal-badge">1073</span></td><td>MARIA EDUARDA DE MOURA AMARAL</td></tr>
+              <tr><td>Gerência de Atendimento aos Usuários - SERVICE DESK</td><td><span class="ramal-badge">1074</span></td><td>RODRIGO DIAS ALVES JULIAO</td></tr>
+              <tr><td>Gerência de Atendimento aos Usuários - SERVICE DESK</td><td><span class="ramal-badge">1075</span></td><td>DILTON MOREIRA SILVEIRA</td></tr>
+              <tr><td>Gerência de Atendimento aos Usuários - SERVICE DESK</td><td><span class="ramal-badge">1076</span></td><td>JONES FREITAS SOARES</td></tr>
+              <tr><td>Gerência de Atendimento aos Usuários - SERVICE DESK</td><td><span class="ramal-badge">1077</span></td><td>BRUNO LOPES CARVALHO</td></tr>
+              <tr><td>Gerência de Atendimento aos Usuários - SERVICE DESK</td><td><span class="ramal-badge">1078</span></td><td>JOSUE BEZERRA DA SILVA</td></tr>
+              <tr><td>SGD - SUPORTE</td><td><span class="ramal-badge">1100</span></td><td>BARKLEY AIRES MENDES BORGES</td></tr>
+              <tr><td>SGD - SUPORTE</td><td><span class="ramal-badge">1101</span></td><td>WENDELL MAGALHAES</td></tr>
+              <tr><td>SGD - Transfere</td><td><span class="ramal-badge">1102</span></td><td>WEDSON FERREIRA SILVA</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" data-close-modal="modalRamaisATI">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Modal Ramais Terceirizadas -->
+  <div class="modal-backdrop" id="modalTerceirizadas">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="modal-title-icon">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <div>
+            <h2>Ramais Terceirizadas</h2>
+            <p>Diretório de contatos e suporte de serviços terceirizados</p>
+          </div>
+        </div>
+        <button class="modal-close" data-close-modal="modalTerceirizadas">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>SERVIÇO / SUPORTE</th>
+                <th>NÚMERO DE CONTATO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Suporte SGD</strong></td><td>0800 063 0063 (Ramais 1100 e 1101)</td></tr>
+              <tr><td><strong>Suporte Telefone VOIP</strong></td><td>(63) 3142-2100</td></tr>
+              <tr><td><strong>Suporte Impressora Brother</strong></td><td>(63) 99234-0004 (WhatsApp)</td></tr>
+              <tr><td><strong>Suporte SESAU</strong></td><td>(63) 99266-0069 (Chat Bot)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" data-close-modal="modalTerceirizadas">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Modal Configurar URLs dos Links -->
+  <div class="modal-backdrop" id="modalConfigLinks">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="modal-title-icon">
+            <path d="M12 20h9"/>
+            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+          </svg>
+          <div>
+            <h2>Configuração de Endereços dos Links (Administrador)</h2>
+            <p>Altere os endereços IP/domínios internos dos sistemas e salve no seu navegador.</p>
+          </div>
+        </div>
+        <button class="modal-close" data-close-modal="modalConfigLinks">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="info-alert">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span>Altere os endereços de acesso para cada sistema hospitalar se necessário.</span>
+        </div>
+        <div class="config-links-list" id="configLinksContainer">
+          <!-- Populated by script.js -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="btnResetDefaultUrls">Restaurar Padrões</button>
+        <button class="btn-primary" id="btnSaveConfigUrls">Salvar Alterações</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
